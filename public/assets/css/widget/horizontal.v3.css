@@ -1,0 +1,826 @@
+/*---------- 위젯 : 가로형 ----------*/
+/*-- 가로형 : 공통 --*/
+#widgetWrap.horizonWrap {
+    max-width: 700px;
+    height: 150px;
+}
+
+#widgetWrap.horizonWrap .widgetInner.on {
+    width: 51.7%;
+    min-width: 280px;
+    margin: 0 auto;
+}
+
+
+/*-- 위젯 : 초기화면 --*/
+.horizonWrap .widgetIntro .introBtnArea {
+    display: flex;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+}
+
+#widgetWrap.horizonWrap .widgetIntro .introBtnArea .introBtn {
+    width: 68px;
+}
+
+.horizonWrap .widgetIntro .subTitle {
+    font-size: 0.875rem;
+}
+
+.horizonWrap .widgetIntro .introImg {
+    width: 117px;
+    bottom: 0;
+    left: 6px;
+}
+
+
+/*-- 위젯 : 로그인 --*/
+.horizonType {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#widgetWrap .horizonType .widgetLoginWrap {
+    position: relative;
+    /*
+    height: 150px;
+    padding: 0 6.25% 18px 6.25%;
+     */
+}
+
+#widgetWrap .horizonType .widgetLoginInner {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.horizonType .widgetLoginWrap .logoArea {
+    padding: 16px 0;
+}
+
+.horizonType .titleWrap p {
+    font-size: 2rem;
+}
+
+.horizonType .loginArea {
+    position: relative;
+}
+
+.horizonType .loginArea .login {
+    margin-right: 1.9%;
+}
+
+#widgetWrap .horizonType .login .pwArea {
+    margin-bottom: 0;
+}
+
+.horizonType .loginArea .loginInput {
+    height: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.horizonType .loginArea .loginInput .login {
+    width: 100%;
+}
+
+#widgetWrap .horizonType .widgetBtn {
+    margin-bottom: 0;
+}
+
+#widgetWrap.horizonWrap .horizonType .widgetBtn button {
+    width: 80px;
+    height: 26px;
+}
+
+#widgetWrap.horizonWrap .loginBtnArea button span {
+    padding: 0;
+}
+
+.horizonType .loginArea .loginBtnArea {
+    width: 80px;
+}
+
+.horizonType .loginArea .loginBtn {
+    width: 10.9%;
+}
+
+#widgetWrap .horizonType .loginArea input,
+#widgetWrap .horizonType .loginArea input::placeholder {
+    font-size: 0.8125rem;
+}
+
+#widgetWrap .horizonType .loginInput .idArea {
+    margin-bottom: 12px;
+}
+
+#widgetWrap .login input {
+    padding-bottom: 7.5px;
+}
+
+.horizonType .loginSubArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#widgetWrap .horizonType .loginSubArea .findArea {
+    display: inline-block;
+}
+
+#widgetWrap.horizonWrap .horizonType .loginSubArea .findAndJoin {
+    display: flex;
+}
+
+.horizonType .loginSubArea .findArea a {
+    display: inline-block;
+    padding: 0 4.5px;
+    font-size: 0.75rem;
+    color: #9e9e9e;
+    border-right: 1px solid #bdbdbd;
+}
+
+.horizonType .loginSubArea .findArea a:first-child {
+    padding-left: 0;
+}
+
+.horizonType .loginSubArea .findArea a:last-child {
+    padding-right: 0;
+    border-right: 0;
+}
+
+#widgetWrap .horizonType .saveEmailArea label {
+    align-items: center;
+    /*padding-top: 2px;*/
+    padding-left: 5px;
+    font-size: 0.75rem;
+}
+
+.horizonType .findAndJoin a:after {
+    height: 12px;
+    top: 1px;
+    right: 1px;
+}
+
+
+/*-- 가로형 : 프로필 --*/
+.horizonType .widgetProfileWrap {
+    position: relative;
+    height: 150px;
+}
+
+.horizonType .widgetProfileWrap:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #f5f5f5;
+    z-index: -1;
+}
+
+.horizonType .widgetProfileWrap .arrowArea {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.horizonType .widgetProfileWrap .arrowArea .downArrow {
+    transform: rotate(360deg);
+}
+
+#widgetWrap .horizonType .userMoreWrap .userMore {
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
+}
+
+.horizonType .userMoreWrap .userMoreArea {
+    top: 34px;
+}
+
+.horizonType .userMoreWrap .userMore a {
+    display: block;
+    margin: 0 12px;
+    padding: 4px 0;
+    font-size: 0.75rem;
+    color: #333333;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.horizonType .userMoreWrap .userMore li:first-child a {
+    padding-top: 8px;
+}
+
+.horizonType .userMoreWrap .userMore li:last-child a {
+    border-bottom: 0;
+    padding-bottom: 8px;
+    color: #333333;
+}
+
+.horizonType .widgetProfileWrap .dim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.horizonType .widgetProfileWrap .userEmail {
+    font-size: 0.625rem;
+}
+
+.horizonType .userMoreArea .arrowArea img.on {
+    transform: rotate(180deg);
+}
+
+.horizonType .profileInner .userMore {
+    position: absolute;
+    top: 13%;
+    right: 20px;
+    width: 9.7%;
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.horizonType .userMore li:first-child a {
+    color: #616161;
+}
+
+.horizonType .userMore li a {
+    display: block;
+    font-size: 0.875rem;
+    color: #9e9e9e;
+}
+
+.horizonType .widgetProfileWrap .profileMenu li {
+    display: flex;
+    align-items: center;
+}
+
+.horizonType .widgetProfileWrap .userMoreWrap {
+    top: 34px;
+}
+
+.horizonType .widgetProfileWrap .moreNPointWrap {
+    width: 50%;
+    padding: 0 10%;
+}
+
+
+/*-- 가로형 : 프로필, 후원 및 공유 --*/
+.horizonType .userProfileArea {
+    width: 50%;
+    margin-top: 17px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.horizonType .profileImgArea {
+    position: relative;
+    width: 77px;
+    height: 77px;
+    margin: 0 auto;
+}
+
+.horizonType .widgetProfileWrap .profileBasicArea {
+    width: 77px;
+    height: 77px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: linear-gradient(295.75deg, #4ab4e3 0%, #5d5fef 100%);
+}
+
+.horizonType .widgetProfileWrap .profileBasicArea .basicName {
+    line-height: 77px;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.horizonType .profileImgArea .profileImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.horizonType .userInfoArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.horizonType .userInfoArea dl {
+    margin-bottom: 17px;
+}
+
+.horizonType .userInfoArea dt,
+.horizonType .userInfoArea dd {
+    margin-bottom: 5px;
+}
+
+.horizonType .userInfoArea dd:last-child {
+    margin-bottom: 0;
+}
+
+.horizonType .userInfoArea .userName {
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 4px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.horizonType .userInfoArea .userEmail {
+    font-size: 0.625rem;
+    color: #bdbdbd;
+}
+
+.horizonType .profileTableWrap {
+    margin-top: 27px;
+}
+
+.horizonType .moreNPointWrap dl:first-child {
+    margin-bottom: 5px;
+}
+
+.horizonType .moreNPointWrap .tbAsset dt {
+    margin-bottom: 5px;
+    font-size: 0.625rem;
+    font-family: 'Poppins', sans-serif;
+    color: #616161;
+}
+
+.horizonType .moreNPointWrap dd {
+    text-align: right;
+}
+
+.horizonType .moreNPointWrap dd:nth-child(2) {
+    position: relative;
+    width: 100%;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+}
+
+.horizonType .moreNPointWrap dd:nth-child(2) span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 85%;
+}
+
+.horizonType .moreNPointWrap dd:last-child {
+    padding-top: 20px;
+    font-size: 0.625rem;
+    color: #9e9e9e;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+}
+
+.horizonType .userInfoArea .userInfo {
+    margin-top: 6px;
+}
+
+.horizonType .profileMenu {
+    margin-bottom: 0;
+}
+
+.horizonType .profileMenu li {
+    padding: 0;
+}
+
+.horizonType .profileMenu li:first-child {
+    border-right: 0;
+}
+
+.horizonType .profileMenu li img {
+    width: 20px;
+}
+
+.horizonType .userInfoArea .profileMenu span {
+    font-size: 1rem;
+    padding-left: 6%;
+}
+
+
+/*-- 가로형 : 포인트 영역 --*/
+#widgetWrap .horizonType .saveEmailArea {
+    position: relative;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+#widgetWrap .horizonType .findArea {
+    margin-bottom: 0;
+}
+
+
+/*-- 가로형 : 간편 로그인 --*/
+.horizonType .widgetSnsLoginWrap {
+    position: relative;
+    height: 150px;
+}
+
+.horizonType .widgetSnsLoginWrap .shareImg a {
+    margin-right: 8px;
+}
+
+.horizonType .widgetSnsLoginWrap .shareImg img {
+    width: 32px;
+    margin-right: 2.5%;
+    cursor: pointer;
+}
+
+.horizonType .widgetSnsLoginWrap .shareImg img:last-child {
+    margin-right: 0;
+}
+
+
+/*-- 가로형 : 공유하기 --*/
+.horizonType .widgetShareWrap {
+    position: relative;
+    height: 150px;
+    /*max-width: 320px;*/
+    margin: 0 auto;
+}
+
+.horizonType .widgetShareWrap .closeBtn {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    cursor: pointer;
+}
+
+.horizonType .widgetShareWrap .shareTitle {
+    font-size: 0.875rem;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 18px;
+}
+
+.horizonType .widgetShareWrap .shareImg {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 41px;
+}
+
+.horizonType .widgetShareWrap .shareImg li {
+    width: 32px;
+    cursor: pointer;
+}
+
+.horizonType .widgetShareWrap .shareImg li img {
+    width: 100%;
+}
+
+.horizonType .widgetShareWrap li:last-child input {
+    position: absolute;
+    bottom: 3px;
+    left: 25%;
+    width: 50%;
+}
+
+.horizonType .widgetShareWrap li:last-child input.hide {
+    display: none;
+}
+
+.horizonType .widgetShareWrap .snsList {
+    display: flex;
+    justify-content: center;
+}
+
+.horizonType .widgetShareWrap .snsList li {
+    margin-right: 2.5%;
+}
+
+.horizonType .widgetShareWrap .snsList li:last-child {
+    margin-right: 0;
+}
+
+
+/*-- 가로형 : 후원하기 --*/
+.horizonType .widgetRewardArea {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    /*z-index: 99999;*/
+}
+
+.horizonType .widgetRewardArea .closeBtn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.horizonType .widgetRewardArea .title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 16px 5% 22px 5%;
+}
+
+.horizonType .widgetRewardArea fieldset {
+    margin: 0 5%;
+}
+
+.horizonType .widgetRewardWrap .rewardInputArea {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.horizonType .rewardInputArea + .excessNotice {
+    display: none;
+    font-size: 0.625rem;
+    color: #ff4343;
+    padding-bottom: 4px;
+}
+
+.horizonType .rewardInputArea.excess + .excessNotice {
+    display: block;
+}
+#widgetWrap .horizonType .widgetRewardWrap .rewardInputArea.excess input {
+    border-bottom: 1px solid #ff4343;
+}
+
+.horizonType .widgetRewardWrap .rewardInputArea .removeTxt {
+    position: absolute;
+    bottom: 16px;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+#widgetWrap .horizonType .widgetRewardWrap .rewardInputArea input {
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #5d5fef;
+}
+
+#widgetWrap .horizonType .widgetRewardWrap.excess .rewardInputArea input {
+    border-bottom: 1px solid #ff4343;
+}
+
+#widgetWrap .horizonType .widgetRewardWrap .rewardInputArea input[type="number"] {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#widgetWrap .horizonType .widgetRewardWrap.excess .rewardInputArea {
+    border-bottom: none;
+}
+
+#widgetWrap .horizonType .widgetRewardWrap .rewardInputArea input::placeholder {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px 0 8px 0;
+    border-bottom: 1px solid #5d5fef;
+}
+
+.horizonType .widgetRewardWrap .rewardPoint {
+    padding-bottom: 31px;
+}
+
+.horizonType .widgetRewardWrap.excess .rewardPoint {
+    padding-bottom: 18px;
+}
+
+#widgetWrap .horizonType .widgetRewardWrap .btnLight {
+    position: absolute;
+    right: 5%;
+    bottom: 16px;
+    width: 46px;
+    height: 26px;
+}
+
+.horizonType .widgetRewardWrap button span {
+    display: block;
+    font-size: 0.75rem;
+}
+
+
+/*-- 가로형 : 후원완료 --*/
+.horizonType .widgetRewardWrap {
+    height: 150px;
+}
+
+.horizonType .widgetRewardWrap .rewardText {
+    padding-bottom: 36px;
+}
+
+.horizonType .widgetRewardWrap .rewardText.rewardMedia {
+    display: block;
+}
+
+.horizonType .widgetRewardWrap .rewardText span.bold {
+    font-weight: 500;
+    color: #5d5fef;
+}
+
+.horizonType .widgetRewardWrap .rewardCompleteTitle {
+    display: flex;
+    padding: 16px 5% 8px 5%;
+}
+
+.horizonType .widgetRewardWrap .rewardCompleteTitle img {
+    width: 20px;
+}
+
+.horizonType .widgetRewardWrap .rewardCompleteTitle strong {
+    padding-left: 8px;
+    font-size: 1.25rem;
+}
+
+.horizonType .widgetRewardWrap .closeBtn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.horizonType .widgetRewardWrap .rewardText {
+    padding: 0 5%;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+#widgetWrap .horizonType .widgetRewardWrap .btnDark {
+    position: absolute;
+    bottom: 16px;
+    right: 5%;
+    width: 14%;
+    height: 26px;
+}
+
+
+/*-- 가로형 : 리워드알림 --*/
+.horizonType .widgetRewardNotice {
+    width: 100%;
+    height: 150px;
+    top: 160px;
+    z-index: 99999;
+}
+
+.horizonType .widgetRewardNotice .closeBtn2 {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    cursor: pointer;
+}
+
+.horizonType .widgetRewardNotice .noticeTitle {
+    padding: 16px 6.875% 8px 6.875%;
+}
+
+.horizonType .widgetRewardNotice form {
+    padding: 0 6.875%;
+}
+
+.horizonType .widgetRewardNotice .noticeText {
+    padding-bottom: 12px;
+}
+
+.horizonType .widgetRewardNotice .noticeBtnWrap {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    /*width: 28.75%;*/
+    cursor: pointer;
+}
+
+.horizonType .widgetRewardNotice .title {
+    margin-bottom: 8px;
+}
+
+.horizonType .widgetRewardNotice button {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.horizonType .widgetRewardNotice button.noticeBtnCancel {
+    margin-right: 8px;
+    border: 1px solid #ffffff;
+}
+
+.horizonType .widgetRewardNotice button.noticeBtnActive {
+    background: #ffffff;
+}
+
+.horizonType .widgetRewardNotice button.noticeBtnActive span {
+    color: #333333;
+}
+
+#widgetWrap .horizonType .widgetRewardNotice button span {
+    display: block;
+    padding: 7px 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.horizonType .widgetRewardNotice .rewardImg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+/*-- 가로형 : 토스트 --*/
+.horizonType .widgetToast {
+    position: absolute;
+    bottom: 11px;
+    left: 50%;
+    width: 229px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.55);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    /*background-image: url("/assets/images/front/widget/img/widgetToastBg.svg");*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+}
+
+.horizonType .widgetToast.urlToast {
+    width: 187px;
+    height: 37px;
+}
+
+.horizonType .widgetToast.hide {
+    display: none;
+}
+
+/*.horizonType .widgetToast .toastRed {*/
+/*    position: absolute;*/
+/*    bottom: 0px;*/
+/*    left: 0px;*/
+/*    width: 10px;*/
+/*    height: 37px;*/
+/*    border-radius: 6px 0px 0px 6px;*/
+/*    background-color: #ff4343;*/
+/*}*/
+
+.horizonType .widgetToast span.toast {
+    display: inline-block;
+    padding: 11.5px 0;
+    font-size: 0.8125rem;
+    color: #e0e0e0;
+}
+
+.horizonType .widgetToast img {
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.horizonClose {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.moreNPointWrap dl dd .todayPlus {
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 0.625rem;
+    color: #616161;
+}
+
+#copyShareUrl {
+    position: absolute;
+    bottom: -20px;
+    color: #ffffff;
+}

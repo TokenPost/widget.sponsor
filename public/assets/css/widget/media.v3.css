@@ -1,0 +1,68 @@
+/* 가로형 v3/horizontal */
+@media screen and (min-width: 321px) {
+    #widgetWrap .widgetIntro {
+        padding: 32px 5%;
+    }
+
+    .horizonWrap .widgetIntro .introImg {
+        left: 22px;
+    }
+
+    .horizonWrap .widgetIntro .introBtnArea {
+        right: 40px;
+    }
+
+    .horizonType .widgetLoginWrap .logoArea {
+        width: 362px;
+    }
+
+}
+
+/* 세로형 v3/index */
+@media screen and (max-width: 320px) {
+    .horizonWrap .widgetIntro .introBtnArea {
+        right: 20px;
+    }
+
+    .horizonType .widgetRewardWrap .rewardText .rewardMedia {
+        display: block;
+    }
+
+    .horizonType .moreNPointWrap dd:nth-child(2) span {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 284px) {
+    .verticalWrap .widgetSnsLoginWrap .loginImg {
+        justify-content: inherit;
+        padding-left: 5%;
+    }
+}
+
+@media screen and (min-width: 212px) {
+    .verticalWrap .widgetShareWrap .snsList {
+        margin-left: 13%;
+    }
+
+    .verticalWrap .widgetShareWrap .snsList li:nth-child(3),
+    .verticalWrap .widgetShareWrap .snsList li:nth-child(6),
+    .verticalWrap .widgetShareWrap .snsList li:last-child {
+        margin-right: 6%;
+    }
+}
+
+@media screen and (min-width: 227px) {
+    .verticalWrap .widgetSnsLoginWrap .loginImg a#btnLoginTwitter {
+        margin-right: 6%;
+    }
+}
+
+@media screen and (min-width: 237px) {
+    .verticalWrap .widgetShareWrap .snsList li:nth-child(3) {
+        margin-right: 6%;
+    }
+}
+
+
+

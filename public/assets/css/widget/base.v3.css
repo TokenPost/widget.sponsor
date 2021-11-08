@@ -1,0 +1,622 @@
+/* -------------- font ------------- */
+/*-- font-family: 'Montserrat', sans-serif; --*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800&display=swap');
+
+/*-- font-family: 'Noto Sans KR', sans-serif; --*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap');
+
+/*-- Spoqa Han Sans Neo Fonts --*/
+/*-- 한산스 : 숫자 폰트 --*/
+@font-face{
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: lighter;
+    src: url('/assets/font/SpoqaHanSansLight.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/assets/font/SpoqaHanSansRegular.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/assets/font/SpoqaHanSansNeoMedium.woff2') format('woff');
+}
+
+@font-face{
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: bold;
+    src: url('/assets/font/SpoqaHanSansBold.woff') format('woff');
+}
+
+
+/*-- Poppins Fonts --*/
+/*-- 포핀스 : 영문 폰트 --*/
+@font-face{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 100;
+    src: url('/assets/font/Poppins-Thin.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    src: url('/assets/font/Poppins-ExtraLight.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/assets/font/Poppins-Light.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/font/Poppins-Regular.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/assets/font/Poppins-Medium.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/assets/font/Poppins-SemiBold.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/assets/font/Poppins-Bold.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: url('/assets/font/Poppins-ExtraBold.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('/assets/font/Poppins-Black.woff') format('woff');
+}
+
+
+/* --------------------------------- */
+body{
+    font-size: 16px;
+    color: #333;
+    overflow: hidden;
+    -webkit-text-size-adjust: none;
+}
+
+.numFont{
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: normal;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input {
+    -webkit-appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* select style */
+select{
+    /*ios대응*/
+    appearance: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+select{
+    padding: 0 35px 0 8px;
+    border-radius: 4px;
+    background: url('/assets/images/front/widget/common/img/selectArrow.png') no-repeat;
+    background-position-x: 90%;
+    background-position-y: 50%;
+}
+[type="checkbox"]{
+    /*display: none;*/
+}
+/*[type="checkbox"]~label{*/
+/*display: inline-block;*/
+/*padding-left: 30px;*/
+/*line-height: 24px;*/
+/*background: url('/assets/bigissue/images/icon/btnCheckOff.png') center left no-repeat;*/
+/*cursor: pointer;*/
+/*}*/
+[type="checkbox"]~label span{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*-- 체크박스 스타일 --*/
+.checkStyle{
+    vertical-align: middle;
+}
+.checkStyle input[type='checkbox'],
+.checkStyle input[type='radio']{
+    /* 실제 checkbox or radio 없애기 */
+    /* radio style도 필요하여 추가함. */
+    display: none;
+}
+.checkStyle input[type='checkbox'] + label::before,
+.checkStyle input[type='radio'] + label::before{
+    /* 가짜 checkbox or radio 만들기 */
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.checkStyle input[type="checkbox"] ~ label:before,
+.checkStyle input[type="radio"] ~ label:before{
+    background: url("/assets/images/front/common/icon/btnCheck.svg") no-repeat;
+}
+.exchangeWrap .checkStyle input[type="checkbox"] ~ label:before{
+    margin-bottom: 2px;
+}
+.checkStyle input[type="checkbox"] ~ label.btnLarge:before{
+    background: url("/assets/images/front/common/icon/btnCheckLarge.svg") no-repeat;
+}
+.checkStyle input[type="checkbox"]:checked ~ label:before,
+.checkStyle input[type="radio"]:checked ~ label:before{
+    background: url("/assets/images/front/common/icon/btnCheckClicked.svg") no-repeat;
+}
+.checkStyle input[type="checkbox"] ~ label,
+.checkStyle input[type="checkbox"]:checked ~ label,
+.checkStyle input[type="radio"] ~ label,
+.checkStyle input[type="radio"]:checked ~ label{
+    background: none;
+}
+.checkStyle input[type="checkbox"] ~ label span,
+.checkStyle input[type="radio"] ~ label span{
+    vertical-align: middle;
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* 차트 데이터 없을 경우 */
+.noChart{
+    margin-top: 100px;
+    text-align: center;
+    color: #bdbdbd;
+    font-weight: 100;
+}
+body{
+    min-height: auto;
+    margin: 0;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+textarea{
+    line-height: 1.8;
+    border: 1px solid #e0e0e0;
+}
+input{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    border:1px solid #e0e0e0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.hide{ 
+    display: none;
+}
+.show{
+    display: block;
+}
+.warning{
+    color: #EB5757;
+}
+.pass{
+    color: #2F80ED;
+}
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+.ellipsis1{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis; /* 여러 줄 자르기 추가 스타일 */
+    white-space: normal;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+/*-- 접근성 위한 숨김 텍스트 --*/
+.ir_so {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+
+
+
+/*---------- Link V3 : Widget ----------*/
+/*-- 위젯 : 공통 --*/
+iframe {
+    border: none;
+}
+
+#wrap {
+    overflow: hidden;
+}
+
+#widget #publish_link_widget_iframe_main{
+    width: 100%;
+}
+
+#widgetWrap {
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid #EEEEEE;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#widgetWrap .title {
+    line-height: 133%;
+    font-weight: 300;
+    color: #333333;
+}
+
+#widgetWrap .bold {
+    font-weight: 700;
+}
+
+#widgetWrap input {
+    border: none;
+    border-radius: 0;
+}
+
+button {
+    all: unset;
+}
+
+#widgetWrap input:focus {
+    outline: none;
+}
+
+#widgetWrap .widgetInner .verticalType {
+    position: relative;
+}
+
+#widgetWrap .verticalType .closeBtn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+#widgetWrap .closeBtnWrap {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#widgetWrap .closeBtn.hide {
+    display: none;
+}
+
+.red {
+    color: #eb5757;
+}
+
+.blue {
+    color: #2f80ed;
+}
+
+.ellipsis {
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+/*-- 버튼 공통 : 비활성화 --*/
+#widgetWrap .btnLight,
+#widgetWrap .btnDark {
+    width: 100%;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#widgetWrap .btnLight {
+    background-color: #e0e0e0;
+}
+
+button span {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+#widgetWrap input[type="text"],
+#widgetWrap input[type="email"],
+#widgetWrap input[type="number"]{
+    font-weight: 350;
+    color: #5d5fef;
+}
+
+
+/*-- 버튼 공통 : 활성화 --*/
+.btnDark {
+    width: 100%;
+    height: 26px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: #5d5fef;
+    cursor: pointer;
+}
+
+/*.widgetArea {*/
+/*    height: 150px;*/
+/*}*/
+
+#widgetWrap .widgetRewardWrap.excess .rewardInputArea input[type="number"] {
+    color: #ff4343;
+}
+
+#widgetWrap .widgetRewardWrap.excess .rewardInputArea {
+    border-bottom: 1px solid #ff4343;
+}
+
+
+/*-- 공통 : 초기화면 --*/
+#widgetWrap .widgetIntro {
+    position: relative;
+    height: 150px;
+    padding: 32px 7.5%;
+}
+
+#widgetWrap .widgetIntro .introImg {
+    position: absolute;
+}
+
+#widgetWrap .widgetIntro .introTitle {
+    margin-bottom: 14px;
+}
+
+#widgetWrap .widgetIntro .introTitle .subTitle {
+    margin-bottom: 5px;
+}
+
+#widgetWrap .widgetIntro .introTitle .mainTitle {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#widgetWrap .widgetIntro .introBtnArea .introBtn {
+    width: 100%;
+    height: 26px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#widgetWrap .widgetIntro .introBtnArea .introBtn:first-child {
+    margin-right: 8px;
+}
+
+#widgetWrap .widgetIntro .introBtnArea .introBtn.btnLight2 {
+    background-color: #efeffd;
+}
+
+#widgetWrap .widgetIntro .introBtnArea .introBtn.btnDark2 {
+    background-color: #5d5fef;
+}
+
+#widgetWrap .widgetIntro .introBtnArea .introBtn span {
+    display: block;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+#widgetWrap .widgetIntro .introBtnArea .introBtn.btnLight2 span {
+    color: #5d5fef;
+}
+
+#widgetWrap .widgetIntro .introBtnArea .introBtn.btnDark2 span {
+    color: #ffffff;
+}
+
+
+/*-- 공통 : 로그인 --*/
+#widgetWrap .loginArea .login input {
+    width: 100%;
+    border-bottom: 2px solid #eeeeee;
+}
+
+#widgetWrap .loginArea input,
+#widgetWrap .loginArea input::placeholder {
+    font-size: 0.8125rem;
+}
+
+#widgetWrap .login input::placeholder {
+    color: #9e9e9e;
+}
+
+#widgetWrap .login input:focus {
+    border-bottom: 2px solid #5d5fef;
+}
+
+#widgetWrap .login input[type="email"],
+#widgetWrap .login input[type="password"] {
+    font-size: 0.8125rem;
+    color: #333333;
+}
+
+#widgetWrap .saveEmailArea input {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    cursor: pointer;
+}
+
+#widgetWrap .saveEmailArea img {
+    width: 14px;
+    height: 14px;
+}
+
+#widgetWrap .loginBtnArea button span {
+    display: block;
+    padding: 7px 0;
+    font-size: 0.75rem;
+}
+
+#widgetWrap .loginBtnArea button.btnStroke {
+    width: 100%;
+    height: 26px;
+    margin-bottom: 7px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #5d5fef;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#widgetWrap .loginBtnArea button.btnStroke span {
+    color: #5d5fef;
+}
+
+#widgetWrap .loginBtnArea button.btnLight {
+    background-color: #5d5fef;
+}
+
+#widgetWrap .findAndJoin a {
+    position: relative;
+}
+
+/*#widgetWrap .findAndJoin a:after {*/
+/*    content: "";*/
+/*    display: inline-block;*/
+/*    position: absolute;*/
+/*    width: 1px;*/
+/*    background-color: #bdbdbd;*/
+/*}*/
+
+#widgetWrap .findArea a:last-child {
+    color: #616161;
+}
+
+/*-- 공통 : 리워드알림 --*/
+#widgetWrap .widgetRewardNotice {
+    position: absolute;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+#widgetWrap .widgetRewardNotice:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background: linear-gradient(90deg, #4caaf8 0%, #5d5fef 100%);
+}
+
+#widgetWrap .widgetRewardNotice .title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+#widgetWrap .widgetRewardNotice .noticeText {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+
+/*-- 공통 : 메인 --*/
+#widgetWrap .widgetProfileWrap .userMoreWrap {
+    position: absolute;
+    /*width: 44%;*/
+    top: 38px;
+    right: 16px;
+    z-index: 100;
+}
+
+
+/*-- 공통 : 후원하기 --*/
+#widgetWrap .widgetRewardWrap .rewardPoint {
+    font-size: 0.75rem;
+}
+
+
+/*-- 공통 : 후원완료 --*/
+#widgetWrap .widgetRewardWrap .rewardCompleteBtn span {
+    display: block;
+    font-size: 0.75rem;
+}
